@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background Tile -->
+  <rect width="100" height="100" rx="22" fill="#0d9488"/>
+
+  <g fill="#ffffff">
+    <!-- Top-Left QR Target -->
+    <path fill-rule="evenodd" d="M20 20h26v26H20V20zm6 6h14v14H26V26z"/>
+    <rect x="30" y="30" width="6" height="6" rx="1.5"/>
+
+    <!-- Top-Right QR Target -->
+    <path fill-rule="evenodad" d="M54 20h26v26H54V20zm6 6h14v14H60V26z"/>
+    <rect x="64" y="30" width="6" height="6" rx="1.5"/>
+
+    <!-- Bottom-Left QR Target -->
+    <path fill-rule="evenodd" d="M20 54h26v26H20V54zm6 6h14v14H26V60z"/>
+    <rect x="30" y="64" width="6" height="6" rx="1.5"/>
+
+    <!-- Bottom-Right Dynamic Data Bits -->
+    <rect x="54" y="54" width="7" height="7" rx="2"/>
+    <rect x="65" y="54" width="15" height="7" rx="2"/>
+    <rect x="54" y="65" width="15" height="7" rx="2"/>
+    <rect x="73" y="65" width="7" height="7" rx="2"/>
+    <rect x="54" y="73" width="7" height="7" rx="2"/>
+    <rect x="65" y="73" width="15" height="7" rx="2"/>
+  </g>
+</svg>

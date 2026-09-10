@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background / Badge Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C1A11"/>
+      <stop offset="100%" stop-color="#3E2211"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2B828"/>
+      <stop offset="100%" stop-color="#D99B1C"/>
+    </linearGradient>
+
+    <!-- Drop Shadow for Cup & Text -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Base Badge -->
+  <circle cx="250" cy="250" r="230" fill="url(#bgGrad)" stroke="#F2B828" stroke-width="8"/>
+  <circle cx="250" cy="250" r="218" fill="none" stroke="#F2B828" stroke-width="2" stroke-dasharray="6,6" opacity="0.6"/>
+
+  <!-- Coffee Cup & Steam Group -->
+  <g id="coffee-icon" filter="url(#dropShadow)" transform="translate(0, -10)">
+    <!-- Steam Curves -->
+    <path d="M 220,130 C 210,110 230,100 220,80" fill="none" stroke="#F2B828" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 250,125 C 240,100 260,90 250,70" fill="none" stroke="#F2B828" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 280,130 C 270,110 290,100 280,80" fill="none" stroke="#F2B828" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Coffee Cup Body -->
+    <path d="M 170,150 L 185,220 C 190,240 210,250 250,250 C 290,250 310,240 315,220 L 330,150 Z" fill="#FFFFFF"/>
+    
+    <!-- Cup Rim -->
+    <ellipse cx="250" cy="150" rx="80" ry="12" fill="#FFFFFF"/>
+    <ellipse cx="250" cy="150" rx="72" ry="8" fill="#3E2211"/>
+    
+    <!-- Cup Handle -->
+    <path d="M 325,165 C 355,165 360,210 320,215" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Saucer Plate -->
+    <path d="M 150,255 C 150,255 190,270 250,270 C 310,270 350,255 350,255 C 360,255 365,263 350,268 C 320,278 180,278 150,268 C 135,263 140,255 150,255 Z" fill="#F2B828"/>
+  </g>
+
+  <!-- Brand Name: BeCafe -->
+  <g id="brand-text" filter="url(#dropShadow)">
+    <text x="250" y="325" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-weight="bold" font-size="52" fill="#FFFFFF" letter-spacing="1">
+      Be<tspan fill="#F2B828">Café</tspan>
+    </text>
+  </g>
+
+  <!-- Decorative Stars -->
+  <g id="stars" fill="#F2B828" transform="translate(0, 10)">
+    <!-- Center Star -->
+    <polygon points="250,342 253,350 262,350 255,355 257,363 250,358 243,363 245,355 238,350 247,350"/>
+    <!-- Left Star -->
+    <polygon points="220,345 222,351 229,351 224,355 226,361 220,357 214,361 216,355 211,351 218,351" transform="scale(0.85) translate(40, 60)"/>
+    <!-- Right Star -->
+    <polygon points="280,345 282,351 289,351 284,355 286,361 280,357 274,361 276,355 271,351 278,351" transform="scale(0.85) translate(48, 60)"/>
+  </g>
+
+  <!-- Tagline Banner Background -->
+  <g id="tagline-group">
+    <rect x="90" y="380" width="320" height="30" rx="15" fill="url(#goldGrad)"/>
+    <text x="250" y="400" text-anchor="middle" font-family="'Arial Black', 'Trebuchet MS', sans-serif" font-weight="900" font-size="12" fill="#2C1A11" letter-spacing="2">
+      BREWING JOURNEYS
+    </text>
+    
+    <text x="250" y="428" text-anchor="middle" font-family="'Arial', sans-serif" font-weight="bold" font-size="11" fill="#FFFFFF" opacity="0.85" letter-spacing="1.5">
+      BY BHARAT PETROLEUM
+    </text>
+  </g>
+</svg>
